@@ -1,0 +1,260 @@
+
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+color: #856f6f;
+background-color: #837d7d;
+margin: 1vh;
+}
+
+
+
+header {
+background-color: #8b6b6b;
+color: #fff;
+text-align: center;
+font-size: 24px;
+margin: 0;
+padding: 20px;
+}
+
+nav {
+background-color: #ccc;
+list-style: none;
+margin: 0;
+padding: 1%;
+text-align: justify;
+}
+
+nav ul li {
+padding: 1%;
+}
+
+nav ul li a {
+color: #ffffff;
+text-decoration: none;
+}
+
+main {
+margin: 2%;
+}
+
+section {
+border: 1px solid #ccc;
+margin: 10px 0;
+padding: 2vh;
+}
+
+
+
+
+
+
+a:hover {
+text-decoration: none;
+}
+
+
+
+footer {
+background-color: #ffffff;
+color: #fff;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
+
+.primeiro_assunto {
+font-weight: bold;
+font-size: 18px;
+}
+
+.como_funciona {
+text-align: justify;
+}
+
+.mudar_vidas {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+header {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #916868;
+    background-color: #fff;
+    margin: 10px;
+  }
+  
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: justify;
+  }
+  
+  nav ul li {
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  section {
+    border: 1px solid #ccc;
+    margin: 1% 0;
+    padding: 2%;
+  }
+  
+  #introducao {
+    color: #000000;
+    font-size: 4.5vw;
+  }
+  
+  #como-funciona {
+  color: #ffffff;
+  }
+  
+  #video_inteligencia {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  #azinho {
+    font-size: 30px;
+    color: rgb(204, 28, 28);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: black;
+    text-decoration: none;
+  }
+
+  
+  img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  /* Pseudo-classes */
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Adições */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .primeiro_assunto {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .como_funciona {
+    text-align: justify;
+    font-size: 25px;
+
+  }
+  
+  .mudar_vidas {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e6b1b1;
+  }
+  
+  
+
+
+  body {
+    background-color:#333; /* Cinza claro */
+  }
+
+
+h2 {
+    font-size: 25px;
+    color: #e6b1b1;
+  }
+  #cuidado {
+    color: rgb(204, 28, 28);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: black;
+  }
+  
+  #cuidadinhe{
+    font-size: 30px;
+    color: rgb(204, 28, 28);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: black;
+  }
+  #chatgpt{
+  margin: 0;
+  color: #ffffff;
+  }
+
+li,p,h3{
+  color: #ffffff;
+}
+
+#chat{
+  color: #ffffff;
+}
+
+#chatgpt{
+  text-align: center;
+}
+
+
+#gemini{
+  text-align: center;
+}
+
+#chatbot{
+  text-align: center;
+}
+#sites{
+  text-align: center;
+}
+
+#contatinho{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  border: px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  outline: none;
+  text-decoration: none;
+
+}
