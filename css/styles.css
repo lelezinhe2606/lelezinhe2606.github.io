@@ -4,7 +4,7 @@ font-family: Arial, sans-serif;
 font-size: 16px;
 color: #856f6f;
 background-color: #837d7d;
-margin: 10px;
+margin: 1vh;
 }
 
 
@@ -22,12 +22,12 @@ nav {
 background-color: #ccc;
 list-style: none;
 margin: 0;
-padding: 10px;
+padding: 1%;
 text-align: justify;
 }
 
 nav ul li {
-padding: 10px;
+padding: 1%;
 }
 
 nav ul li a {
@@ -36,25 +36,25 @@ text-decoration: none;
 }
 
 main {
-margin: 20px;
+margin: 2%;
 }
 
 section {
 border: 1px solid #ccc;
 margin: 10px 0;
-padding: 20px;
+padding: 2vh;
 }
 
 
 
 
-/* Pseudo-classes */
+
 
 a:hover {
 text-decoration: none;
 }
 
-/* Adições */
+
 
 footer {
 background-color: #ffffff;
@@ -126,13 +126,13 @@ body {
   
   section {
     border: 1px solid #ccc;
-    margin: 10px 0;
-    padding: 20px;
+    margin: 1% 0;
+    padding: 2%;
   }
   
   #introducao {
     color: #000000;
-    font-size: 45px;
+    font-size: 4.5vw;
   }
   
   #como-funciona {
@@ -233,14 +233,28 @@ li,p,h3{
   color: #ffffff;
 }
 
-#sites{
-  display: inline;
-}
-.container-imagens {
-  display: inline;
-  width:280px;
+#chatgpt{
+  text-align: center;
 }
 
-.container-imagens p {
-  width: max-content;
+
+#gemini{
+  text-align: center;
+}
+
+#chatbot{
+  text-align: center;
+}
+#sites{
+  text-align: center;
+}
+
+#contatinho{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  border: px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  outline: none;
+  text-decoration: none;
+
 }
