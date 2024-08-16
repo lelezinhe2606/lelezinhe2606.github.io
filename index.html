@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tarefas</title>
+    <style>
+           table {
+                width: 50%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                font-size: 18px;
+                text-align: left;
+            }
+    
+            thead {
+                background-color: #934caf;
+                color: rgb(0, 0, 0);
+            }
+    
+            th,
+            td {
+                padding: 12px 15px;
+                border: 1px solid #dddddd;
+               background-color: #b29ec5;
+            }
+    
+            tbody tr:nth-child(even) {
+                background-color: #b29ec5;
+            }
+    
+            tfoot {
+                background-color: #7a4caf;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+            }
+    
+            tfoot td {
+                text-align: right;
+            }
+    </style>
+         
 </head>
 <body>
-<a href="site/index.html">SITE SALA</a>
-<a href="atividadeflexbox/index.html">SITE FLEXBOX</a>
-<a href="Portifólio/index.html">Portifólio </a>
+    <table>
+        <thead> 
+            <th>2 Bimestre sites</th>
+           
+        </thead>
+        <tr>
+            <td><a href="site/index.html">SITE SALA</a></td>
+        </tr>
+       <tr>
+        <td><a href="atividadeflexbox/index.html">SITE FLEXBOX</a></td>
+       </tr>
+       <tr>
+          <td><a href="Portifólio/index.html">Portifólio</a></td>
+       </tr>
+        <tfoot>
+            <tr>
+                <td>ALUNA:Leticia Gonçalves</td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
 </html>
