@@ -9,15 +9,16 @@ body {
 }
 
 header {
-    background-color: #e5ec7cec;
+    background-color: #ffc400a1;
     color: #fff;
     padding: 1rem;
     text-align: center;
-    height: 100px;
+    height: 50px;
+    
 }
 
 nav {
-    background-color: #333;
+    background-color: #868477;
   
 }
 
@@ -43,14 +44,18 @@ nav ul li a:hover {
 }
 
 .container-banner {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 2rem;
-    background-color: #e9e9e9;
+    background-color: #f1ec9b;
     text-align: center;
+}
+.container-texto {
+    width: 100%;
 }
 
 .container-texto h1 {
@@ -65,13 +70,17 @@ nav ul li a:hover {
     color: #666;
 }
 
-.img-bombom-na-gaiola {
+.img-bombom-na-gaiola, .img-bombom-no-fio {
     margin-top: 4rem;
     text-align: center;
+    /* flex-direction: column; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
 }
 
-.img-bombom-na-gaiola img {
-    max-width: 20%;
+.img-bombom-na-gaiola img, .img-bombom-no-fio img {
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
 }
@@ -80,28 +89,45 @@ nav ul li a:hover {
     margin-top: 1rem;
     font-size: 20px;
     color: #333;
+    max-width: 400px;
+}
+.img-bombom-no-fio  p{
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
+/* .img-bombom-no-fio img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+} */
+
+.img-bombom-no-fio h2 {
+    margin-top: 1rem;
+    border-radius: 20px black;
+    font-size: 1rem;
+    color: #333;
+    max-width: 400px;
+}
+
+
 footer {
-    background-color: #333;
+    background-color: #ffc400a1;
     color: #fff;
     text-align: center;
     width: 100%;
 }
 
-.img-bombom-no-fio {
-    margin-top: 4rem;
-    text-align: center;
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.img-bombom-no-fio img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 8px;
-}
 
-.img-bombom-no-fio h2 {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #333;
+.container-geral {
+    /* width: 40vw; */
+    min-width: 300px;
 }
