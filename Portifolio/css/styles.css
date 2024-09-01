@@ -1,0 +1,138 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5; /* Lilás claro */
+    color: #4a148c; /* Roxo escuro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #6a1b9a; /* Lilás médio */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do vídeo */
+video {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #6a1b9a; /* Lilás médio */
+    max-height: 350px; /* Limita a altura máxima do vídeo */
+}
+
+/* Flexbox para as imagens e vídeos lado a lado */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o topo dos itens */
+    flex-wrap: wrap;
+    gap: 5px; /* Espaçamento reduzido entre os itens */
+    margin: 20px 0;
+}
+
+.flex-item {
+    text-align: center;
+    flex: 1;
+    max-width: 48%; /* Ajusta a largura máxima dos itens flexíveis */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.flex-item video,
+.flex-item img {
+    max-width: 100%; /* Ajusta o tamanho máximo dos vídeos e imagens */
+    height: auto;
+    border: 4px solid #6a1b9a; /* Lilás médio */
+    max-height: 300px; /* Ajusta a altura máxima dos vídeos e imagens */
+}
+
+/* Estilo específico para a imagem em Chupinguaia */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px; /* Ajusta a altura máxima para a imagem específica */
+    border: 4px solid #6a1b9a; /* Lilás médio */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #4a148c; /* Roxo escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 5px 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    nav ul li, footer ul li {
+        margin: 5px 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    .flex-item img,
+    .flex-item video {
+        max-width: 80%; /* Ajusta o tamanho máximo das imagens e vídeos em telas pequenas */
+    }
+
+    video {
+        max-height: 250px; /* Ajusta a altura máxima do vídeo em telas pequenas */
+    }
+}
+
