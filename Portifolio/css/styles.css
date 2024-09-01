@@ -43,6 +43,27 @@ main {
     text-align: center;
 }
 
+/* Estilo das seções */
+main section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-top: 2px solid #6a1b9a; /* Linha separadora no topo das seções */
+}
+
+/* Estilo específico para a seção "Morando em Chupinguaia" */
+section#chupinguaia {
+    border-top: 2px solid #6a1b9a; /* Linha separadora no topo */
+    padding-top: 20px;
+}
+
+/* Estilo das imagens principais */
+main img {
+    width: 200px; /* Ajusta o tamanho da imagem para se adequar ao layout */
+    height: auto;
+    margin-top: 20px;
+    border: 4px solid #6a1b9a; /* Lilás médio */
+}
+
 /* Estilo do vídeo */
 video {
     max-width: 100%;
@@ -57,7 +78,7 @@ video {
     justify-content: center;
     align-items: flex-start; /* Alinha o topo dos itens */
     flex-wrap: wrap;
-    gap: 5px; /* Espaçamento reduzido entre os itens */
+    gap: 10px; /* Espaçamento reduzido entre os itens */
     margin: 20px 0;
 }
 
@@ -134,5 +155,12 @@ footer ul li a {
     video {
         max-height: 250px; /* Ajusta a altura máxima do vídeo em telas pequenas */
     }
+
+    main img {
+        width: 150px; /* Ajusta o tamanho das imagens principais em telas pequenas */
+    }
 }
+
+
+
 
