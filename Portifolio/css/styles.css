@@ -89,13 +89,8 @@ video {
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
 
-.flex-item video,
-.flex-item img {
-    max-width: 100%; /* Ajusta o tamanho máximo dos vídeos e imagens */
-    height: auto;
-    border: 4px solid #6a1b9a; /* Lilás médio */
-    max-height: 300px; /* Ajusta a altura máxima dos vídeos e imagens */
-}
+
+
 
 /* Estilo específico para a imagem em Chupinguaia */
 .responsive-img {
