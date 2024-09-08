@@ -16,6 +16,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 nav ul {
@@ -29,11 +30,23 @@ nav ul {
 
 nav ul li {
     margin: 5px 15px;
+    border: 2px solid transparent; /* Borda padrão transparente */
+    border-radius: 8px; /* Bordas arredondadas nos itens do menu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Transição suave para efeitos */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 15px; /* Adiciona padding ao link */
+    display: block;
+    border-radius: 8px; /* Bordas arredondadas nos links */
+}
+
+nav ul li:hover {
+    transform: translateY(-5px); /* Faz o item levantar 5px ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para o efeito de profundidade */
+    border-color: #6a1b9a; /* Define a cor da borda ao passar o mouse */
 }
 
 /* Estilo do conteúdo principal */
@@ -41,6 +54,7 @@ main {
     flex: 1;
     padding: 20px;
     text-align: center;
+    border-radius: 8px; /* Bordas arredondadas para o conteúdo */
 }
 
 /* Estilo das seções */
@@ -48,6 +62,7 @@ main section {
     margin-bottom: 40px;
     padding: 20px;
     border-top: 2px solid #6a1b9a; /* Linha separadora no topo das seções */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 /* Estilo das imagens principais */
@@ -56,6 +71,7 @@ main img {
     height: auto;
     margin-top: 20px;
     border: 4px solid #6a1b9a; /* Lilás médio */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
 }
 
 /* Estilo do vídeo */
@@ -64,6 +80,7 @@ video {
     height: auto;
     border: 4px solid #6a1b9a; /* Lilás médio */
     max-height: 350px; /* Limita a altura máxima do vídeo */
+    border-radius: 8px; /* Bordas arredondadas no vídeo */
 }
 
 /* Flexbox para imagens e vídeos */
@@ -74,6 +91,7 @@ video {
     flex-wrap: wrap;
     gap: 10px; /* Espaçamento reduzido entre os itens */
     margin: 20px 0;
+    border-radius: 8px; /* Bordas arredondadas no contêiner */
 }
 
 .flex-item {
@@ -81,13 +99,20 @@ video {
     flex: 1;
     max-width: 48%; /* Ajusta a largura máxima dos itens flexíveis */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border-radius: 8px; /* Bordas arredondadas no item flex */
 }
 
 .flex-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
     border: 4px solid #6a1b9a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para efeito de "levantar" */
+}
+
+.flex-item:hover img {
+    transform: translateY(-10px); /* Faz a imagem "levantar" 10px para cima */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra para dar profundidade */
 }
 
 /* Estilo do rodapé */
@@ -96,6 +121,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 footer ul {
@@ -114,6 +140,7 @@ footer ul li {
 footer ul li a {
     color: #fff;
     text-decoration: none;
+    border-radius: 8px; /* Bordas arredondadas nos links */
 }
 
 /* Responsividade para telas menores */
@@ -150,6 +177,7 @@ footer ul li a {
 section {
     text-align: center;
     padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 /* Flexbox para imagens da seção Minha História */
@@ -158,6 +186,7 @@ section {
     justify-content: center; /* Centraliza as imagens horizontalmente */
     align-items: center; /* Alinha verticalmente as imagens */
     gap: 5px; /* Reduz o espaçamento entre as imagens */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 /* Responsividade para telas menores */
@@ -171,6 +200,7 @@ section {
 #estagio {
     padding: 20px;
     text-align: center;
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 #estagio h2 {
@@ -181,15 +211,24 @@ section {
 /* Flexbox para imagens da seção de estágio */
 #estagio .flex-container {
     gap: 20px; /* Espaçamento entre as imagens */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 #estagio .flex-item {
     max-width: 22%; /* Ajusta a largura das imagens */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 #estagio .flex-item img {
     width: 100%;
     height: auto;
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona a transição suave */
+}
+
+#estagio .flex-item:hover img {
+    transform: translateY(-10px); /* Faz a imagem "levantar" 10px para cima */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra para dar profundidade */
 }
 
 /* Responsividade para telas menores na seção de estágio */
@@ -204,6 +243,7 @@ section {
         margin-bottom: 20px;
     }
 }
+
 /* Estilo da seção de contato */
 #Contato {
     padding: 20px;
@@ -229,7 +269,7 @@ section {
     width: 100%;
     padding: 10px;
     border: 1px solid #6a1b9a; /* Borda lilás claro */
-    border-radius: 4px; /* Bordas arredondadas */
+    border-radius: 8px; /* Bordas arredondadas nos campos */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     margin-bottom: 15px; /* Espaçamento entre os campos */
 }
@@ -240,7 +280,7 @@ section {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 4px; /* Bordas arredondadas */
+    border-radius: 8px; /* Bordas arredondadas */
     font-size: 16px;
     cursor: pointer;
 }
@@ -248,21 +288,3 @@ section {
 #Contato button:hover {
     background-color: #4a148c; /* Roxo escuro ao passar o mouse */
 }
-
-/* Estilo da tabela dentro da seção de contato */
-#Contato table {
-    width: 100%;
-    border-collapse: separate; /* Separa as bordas das células */
-    border-spacing: 0; /* Remove o espaçamento entre as células */
-}
-
-#Contato td {
-    padding: 10px;
-}
-
-/* Estilo específico para a tabela */
-#Contato td[colspan="2"] {
-    text-align: center;
-}
-
-
