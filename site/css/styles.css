@@ -18,19 +18,18 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 15px 0; /* Ajusta o padding para telas pequenas */
-    text-align: center;
 }
 
 header h1 {
     margin-bottom: 10px;
-    font-size: 2rem; /* Ajusta o tamanho da fonte do título para telas pequenas */
+    font-size: 1.8rem; /* Ajusta o tamanho da fonte do título */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 10px; /* Ajusta o gap para telas pequenas */
+    flex-direction: column; /* Alinha a navegação verticalmente em telas pequenas */
+    gap: 10px; /* Ajusta o gap entre os itens */
     padding: 0;
 }
 
@@ -45,31 +44,31 @@ nav ul li a {
 }
 
 main {
-    padding: 15px; /* Reduz o padding para telas pequenas */
+    padding: 10px; /* Reduz o padding principal */
 }
 
 h2 {
-    font-size: 1.8rem; /* Ajusta o tamanho da fonte do h2 para telas pequenas */
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte do h2 */
+    margin-bottom: 15px; /* Reduz o margin-bottom */
     color: #388E3C;
 }
 
 h3 {
     color: #388E3C;
-    font-size: 1.6rem; /* Ajusta o tamanho da fonte do h3 para telas pequenas */
+    font-size: 1.4rem; /* Ajusta o tamanho da fonte do h3 */
     margin-bottom: 10px;
 }
 
 section {
-    margin-bottom: 20px; /* Reduz o margin-bottom para telas pequenas */
+    margin-bottom: 20px; /* Reduz o margin-bottom */
     max-width: 100%; /* Faz o section ocupar a largura total disponível */
     margin-left: auto;
     margin-right: auto;
 }
 
 p {
-    font-size: 1rem; /* Ajusta o tamanho da fonte para telas pequenas */
-    margin-bottom: 15px; /* Reduz o margin-bottom para telas pequenas */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    margin-bottom: 15px; /* Reduz o margin-bottom */
 }
 
 /* Linha horizontal para separar conteúdo */
@@ -92,7 +91,7 @@ footer {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 15px; /* Reduz o margin-bottom para telas pequenas */
+    margin-bottom: 15px; /* Reduz o margin-bottom */
 }
 
 table, th, td {
@@ -102,7 +101,7 @@ table, th, td {
 th, td {
     padding: 8px; /* Reduz o padding das células da tabela */
     text-align: center;
-    font-size: 0.9rem; /* Ajusta o tamanho da fonte das células da tabela */
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte das células da tabela */
 }
 
 th {
@@ -120,13 +119,13 @@ form {
     flex-direction: column;
     gap: 10px; /* Reduz o gap entre os elementos do formulário */
     background-color: white;
-    padding: 15px; /* Reduz o padding do formulário */
+    padding: 10px; /* Reduz o padding do formulário */
     border-radius: 8px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow */
 }
 
 label {
-    font-size: 1rem; /* Ajusta o tamanho da fonte dos labels */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte dos labels */
     color: #388E3C;
 }
 
@@ -139,7 +138,7 @@ input, textarea {
 
 button {
     padding: 8px; /* Reduz o padding do botão */
-    font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte do botão */
     background-color: #388E3C;
     color: white;
     border: none;
@@ -155,16 +154,16 @@ button:hover {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Reduz o gap entre as imagens */
+    gap: 10px; /* Ajusta o gap entre as imagens */
     justify-content: center;
 }
 
 .gallery img {
     width: 100%;
-    max-width: 150px; /* Reduz o tamanho máximo das imagens */
+    max-width: 120px; /* Reduz o tamanho máximo das imagens */
     border-radius: 8px;
     border: 3px solid #A5D6A7;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow das imagens */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow das imagens */
 }
 
 /* Estilos responsivos */
@@ -175,7 +174,7 @@ button:hover {
     }
 
     header h1 {
-        font-size: 1.8rem; /* Ajusta o tamanho da fonte do título */
+        font-size: 1.6rem; /* Ajusta o tamanho da fonte do título */
     }
 
     main {
@@ -193,15 +192,15 @@ button:hover {
 
 @media screen and (max-width: 425px) {
     h2 {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte do h2 */
+        font-size: 1.4rem; /* Ajusta o tamanho da fonte do h2 */
     }
 
     p {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte dos parágrafos */
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte dos parágrafos */
     }
 
     button {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte dos botões */
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte dos botões */
     }
 
     .gallery img {
@@ -212,7 +211,7 @@ button:hover {
 /* Estilização do iframe do mapa */
 .map-container iframe {
     width: 100%;
-    height: 200px; /* Reduz a altura do mapa para se ajustar melhor */
+    height: 200px; /* Reduz a altura do mapa */
     border: 2px solid #388E3C;
     border-radius: 8px;
 }
