@@ -25,12 +25,22 @@ header h1 {
     font-size: 1.8rem; /* Ajusta o tamanho da fonte do título */
 }
 
+nav {
+    border: 2px solid #388E3C; /* Adiciona uma borda verde ao redor da navegação */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    padding: 10px; /* Adiciona padding interno */
+    background-color: #4CAF50; /* Ajusta a cor de fundo para combinar com o header */
+    display: inline-block; /* Faz a navegação se ajustar ao tamanho do conteúdo */
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column; /* Alinha a navegação verticalmente em telas pequenas */
-    gap: 10px; /* Ajusta o gap entre os itens */
+    flex-direction: row; /* Alinha a navegação horizontalmente */
+    justify-content: center; /* Centraliza os itens de navegação */
+    gap: 10px; /* Espaçamento entre os itens */
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -41,6 +51,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 16px; /* Adiciona padding interno aos links */
+    border: 2px solid transparent; /* Borda inicial transparente para efeito hover */
+    border-radius: 4px; /* Adiciona bordas arredondadas aos links */
+}
+
+nav ul li a:hover {
+    border-color: white; /* Altera a cor da borda ao passar o mouse */
+    background-color: #388E3C; /* Altera o fundo ao passar o mouse */
 }
 
 main {
@@ -154,13 +172,17 @@ button:hover {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Ajusta o gap entre as imagens */
+    gap: 20px; /* Aumenta o gap entre as imagens */
     justify-content: center;
+    width: 90%; /* Aumenta a largura da galeria */
+    margin: 0 auto; /* Centraliza a galeria dentro da seção */
+    padding: 10px; /* Adiciona padding para a galeria */
 }
 
 .gallery img {
     width: 100%;
-    max-width: 120px; /* Reduz o tamanho máximo das imagens */
+    max-width: 300px; /* Aumenta o tamanho máximo das imagens */
+    height: auto; /* Mantém a proporção das imagens */
     border-radius: 8px;
     border: 3px solid #A5D6A7;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow das imagens */
@@ -169,7 +191,7 @@ button:hover {
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Alinha a navegação verticalmente em telas menores */
         gap: 5px; /* Ajusta o gap para telas menores */
     }
 
@@ -183,6 +205,10 @@ button:hover {
 
     table, th, td {
         font-size: 0.8rem; /* Reduz o tamanho da fonte da tabela */
+    }
+
+    .gallery {
+        width: 100%; /* Ajusta a largura da galeria para telas menores */
     }
 
     .gallery img {
@@ -204,7 +230,7 @@ button:hover {
     }
 
     .gallery img {
-        max-width: 100px; /* Reduz ainda mais o tamanho das imagens da galeria */
+        max-width: 150px; /* Ajusta o tamanho máximo das imagens da galeria em telas muito pequenas */
     }
 }
 
@@ -218,9 +244,9 @@ button:hover {
 
 /* Estilos para o contêiner do vídeo */
 .video-container {
-    max-width: 200px; /* Ajusta a largura máxima para um tamanho muito menor */
+    max-width: 300px; /* Aumenta a largura máxima para um tamanho maior */
     margin: 0 auto; /* Centraliza o contêiner do vídeo */
-    padding: 5px; /* Reduz o padding ao redor do vídeo */
+    padding: 10px; /* Aumenta o padding ao redor do vídeo */
 }
 
 /* Estilos para o elemento de vídeo */
@@ -230,3 +256,4 @@ button:hover {
     border: 2px solid #A5D6A7; /* Adiciona uma borda ao redor do vídeo */
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow */
 }
+
