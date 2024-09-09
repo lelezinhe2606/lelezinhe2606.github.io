@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,7 @@ body {
     background-color: #cef1c3;
     color: #333;
     padding: 10px;
-    text-align: center; /* Centraliza todo o conteúdo */
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -72,11 +71,11 @@ main {
 }
 
 h2, h3 {
-    display: inline-block; /* Faz com que a borda se ajuste ao conteúdo */
-    border: 2px solid #3d7e34; /* Adiciona borda */
-    padding: 10px; /* Adiciona espaço interno */
-    border-radius: 8px; /* Adiciona borda arredondada */
-    transition: all 0.3s ease-in-out; /* Suaviza a transição do efeito */
+    display: inline-block;
+    border: 2px solid #3d7e34;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
 }
 
 h2 {
@@ -86,21 +85,21 @@ h2 {
 }
 
 h2:hover {
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
-    transform: translateY(-5px); /* Eleva o elemento */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 h3 {
     color: #3d7e34;
     font-size: 1.4rem;
     margin-bottom: 10px;
-    padding: 8px; /* Adiciona espaço interno */
-    border-radius: 6px; /* Adiciona borda arredondada */
+    padding: 8px;
+    border-radius: 6px;
 }
 
 h3:hover {
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao passar o mouse */
-    transform: translateY(-3px); /* Eleva o elemento */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
 
 section {
@@ -113,10 +112,9 @@ section {
 p {
     font-size: 0.9rem;
     margin-bottom: 15px;
-    font-weight: bold; /* Adiciona negrito ao texto dos parágrafos */
+    font-weight: bold;
 }
 
-/* Linha horizontal */
 hr {
     border: 1px solid #316432;
     margin: 20px 0;
@@ -132,13 +130,12 @@ footer {
     width: 100%;
 }
 
-/* Estilização compacta para tabelas */
 table {
-    width: auto; /* Ajusta a largura da tabela automaticamente */
-    max-width: 800px; /* Define a largura máxima da tabela */
+    width: auto;
+    max-width: 800px;
     border-collapse: collapse;
-    margin: 0 auto 15px; /* Centraliza a tabela horizontalmente */
-    font-size: 0.8rem; /* Reduz o tamanho da fonte da tabela */
+    margin: 0 auto 15px;
+    font-size: 0.8rem;
 }
 
 table, th, td {
@@ -146,7 +143,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 5px; /* Reduz o padding para tornar a tabela mais compacta */
+    padding: 5px;
     text-align: center;
 }
 
@@ -159,10 +156,9 @@ tbody tr:nth-child(even) {
     background-color: #c8e6c9;
 }
 
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
     table {
-        max-width: 100%; /* Permite que a tabela se ajuste a telas menores */
+        max-width: 100%;
     }
 }
 
@@ -192,7 +188,6 @@ button:hover {
     background-color: #66BB6A;
 }
 
-/* Galeria de imagens */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +213,6 @@ button:hover {
     transition: all 0.3s ease-in-out;
 }
 
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -234,7 +228,7 @@ button:hover {
     }
 
     table, th, td {
-        font-size: 0.7rem; /* Ajusta a fonte para telas menores */
+        font-size: 0.7rem;
     }
 
     .gallery {
@@ -264,7 +258,6 @@ button:hover {
     }
 }
 
-/* Estilização do iframe do mapa */
 .map-container iframe {
     width: 100%;
     height: 200px;
@@ -272,7 +265,6 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Estilos para o contêiner do vídeo */
 .video-container {
     max-width: 300px;
     margin: 0 auto;
@@ -286,7 +278,6 @@ button:hover {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Fundo com a logo da horta */
 body.logo-background {
     background-image: url('img/logo horta.jpeg');
     background-repeat: no-repeat;
@@ -295,14 +286,12 @@ body.logo-background {
     background-attachment: fixed;
 }
 
-/* Estilização para o contêiner da logo */
 .logo-container {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-/* Estilização da imagem da logo */
 .logo-image {
     max-width: 200px;
     width: 100%;
