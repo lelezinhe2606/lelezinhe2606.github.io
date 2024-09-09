@@ -179,14 +179,16 @@ button:hover {
     padding: 10px; /* Adiciona padding para a galeria */
 }
 
+/* Galeria de imagens */
 .gallery img {
     width: 100%;
-    max-width: 300px; /* Aumenta o tamanho máximo das imagens */
+    max-width: 200px; /* Reduz ainda mais o tamanho máximo das imagens */
     height: auto; /* Mantém a proporção das imagens */
     border-radius: 8px;
     border: 3px solid #A5D6A7;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow das imagens */
 }
+
 
 /* Efeito de sombra nas imagens ao passar o mouse */
 .gallery img:hover {
@@ -288,4 +290,5 @@ body.logo-background {
     border-radius: 8px; /* Adiciona bordas arredondadas */
     border: 3px solid #A5D6A7; /* Borda da logo */
 }
+
 
