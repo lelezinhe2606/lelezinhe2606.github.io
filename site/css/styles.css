@@ -268,7 +268,7 @@ button:hover {
 
 /* Fundo com a logo da horta */
 body.logo-background {
-    background-image: url('img/logo.png'); /* Substitua pelo caminho correto da logo */
+    background-image: url('img/logo horta.jpeg'); /* Substitua pelo caminho correto da logo */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%; /* Ajuste o tamanho conforme necessário */
@@ -284,11 +284,25 @@ body.logo-background {
 
 /* Estilização da imagem da logo */
 .logo-image {
-    max-width: 300px; /* Ajuste o tamanho conforme necessário */
+    max-width: 200px; /* Ajuste o tamanho conforme necessário */
     width: 100%;
     height: auto;
     border-radius: 8px; /* Adiciona bordas arredondadas */
     border: 3px solid #A5D6A7; /* Borda da logo */
 }
 
+.galeria img {
+    width: 100%;
+    max-width: 500px; /* Aumenta o tamanho máximo da imagem */
+    height: auto;
+    border: 3px solid #A5D6A7; /* Adiciona uma borda */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+    transition: all 0.3s ease-in-out; /* Transição suave para o efeito */
+}
+
+.galeria img:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra maior ao passar o mouse */
+    transform: translateY(-5px); /* Levanta a imagem ao passar o mouse */
+}
 
