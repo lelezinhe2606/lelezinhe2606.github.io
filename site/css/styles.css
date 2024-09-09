@@ -188,6 +188,13 @@ button:hover {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow das imagens */
 }
 
+/* Efeito de sombra nas imagens ao passar o mouse */
+.gallery img:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra aumentada ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de movimentação leve */
+    transition: all 0.3s ease-in-out;
+}
+
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     nav ul {
@@ -255,5 +262,30 @@ button:hover {
     border-radius: 8px; /* Adiciona bordas arredondadas ao vídeo */
     border: 2px solid #A5D6A7; /* Adiciona uma borda ao redor do vídeo */
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Reduz o box-shadow */
+}
+
+/* Fundo com a logo da horta */
+body.logo-background {
+    background-image: url('img/logo.png'); /* Substitua pelo caminho correto da logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%; /* Ajuste o tamanho conforme necessário */
+    background-attachment: fixed; /* Faz com que o fundo permaneça fixo ao rolar a página */
+}
+
+/* Estilização para o contêiner da logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Estilização da imagem da logo */
+.logo-image {
+    max-width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    border: 3px solid #A5D6A7; /* Borda da logo */
 }
 
