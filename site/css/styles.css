@@ -315,3 +315,6 @@ body.logo-background {
     transform: translateY(-5px);
 }
 
+#footer{
+    position: fixed;
+}
