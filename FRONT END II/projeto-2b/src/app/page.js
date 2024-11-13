@@ -8,4 +8,4 @@ export default function Home() {
       <Image className = {styles.img} src= '/Images/flor.png' alt="imagem flor lilas" width={400} height={400} />
     </div>
   );
-}
+  }
