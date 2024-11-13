@@ -26,3 +26,5 @@ export default function State() {
             <input type="text" onChange={() => manipularInput()} />
         </div>
     )
+
+    
