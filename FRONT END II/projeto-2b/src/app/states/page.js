@@ -2,6 +2,7 @@
 import { useState } from "react"
 export default function State() {
     const [msg, setMsg] = useState('Boa tarde')
+    const [ mostrarDiv, setMostrarDiv] = useState(true);
 
     //const alterarMsg = ()=>{
        // setMsg((prevMsg=>{
@@ -12,19 +13,28 @@ export default function State() {
 
 
      const manipularInput =(evento) => {
-        console.log(evento)
+        console.log(evento.target.value)
+        setMsg(evento.target.value)
 
      }
 
-
-    }
-    return(
+     return(
         <div>
             {/*<p>{msg}</p>
             /*<button onClick={alterarMsg}> alterar</button>*/}
             <p>Sua Mensagem : {msg}</p>
-            <input type="text" onChange={() => manipularInput()} />
+            <input type="text" onChange={manipularInput} />
+            <button onClick= {()=> setMostrarDiv (!mostrarDiv)}>{mostrarDiv?'Esconder': 'Mostrar'}</button>
+            { mostrarDiv&& (
+                <div>
+                Parágrafo dinâmico
+                </div>
+            )
+                
+            }
         </div>
     )
-
+}
+  
     
+
