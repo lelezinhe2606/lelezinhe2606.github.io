@@ -1,5 +1,5 @@
 import './globals.css';
-import Header from '../components/Header'; // Certifique-se de que o caminho está correto
+import Header from '../components/header';
 
 export const metadata = {
   title: 'Favs',
@@ -19,4 +19,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
 
