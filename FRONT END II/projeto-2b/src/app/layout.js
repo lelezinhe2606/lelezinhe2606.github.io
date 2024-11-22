@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Favs',
   description: 'Olivia',
   charset: 'UTF-8',
-  author: 'Marianny Gonçalves',
+  author: 'leticia ',
   keywords: 'HTML, CSS',
 };
 
