@@ -1,31 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-
-.ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: right;
-    gap: 20px;
-
+.lista {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.li{
-    align-items: center;
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav{
-    align-items: center;
-    font-family: "Sour Gummy", sans-serif;
-    justify-content: right;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:rgb(175, 138, 187);
 }
 
-.header{
-    background-color: rgb(168, 65, 194);
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo {
+  display: flex;
+  align-items: center;
+}
 
+.img {
+  height: 40px;
+  /* Ajuste o tamanho  */
+  margin-right: 10px;
+}
+
+.h1 {
+  color: rgba(0, 0, 0, 0.649);
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  .nav.open {
+    /* display: block; */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(196, 170, 170);
+    padding: 10px;
+    max-height: 100vh;
+    overflow: visible;
+    transition: 1s;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

@@ -1,25 +1,23 @@
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-
-
+import Header from "@/components/Header";
 
 export const metadata = {
-  title: "Create Next A",
-  description: "",
-  charset: 'UTF-8',
-  author: 'Leticia',
-  keywords: 'HTML, CSS, JavaScript,React, Next.js'
-
+  title: "Músicas",
+  description: "Músicas",
+  charset:'UTF-8',
+  author:'Marianny Gonçalves',
+  keywords:'HTML, CSS, ',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >
+      <body>
         <Header/>
         {children}
       </body>
     </html>
   );
 }
+
+
