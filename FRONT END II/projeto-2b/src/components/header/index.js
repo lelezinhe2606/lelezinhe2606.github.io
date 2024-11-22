@@ -48,19 +48,3 @@ const Header = () => {
 export default Header;
 
 
-/*export default function Header(){
-    return(
-        <header>
-            <nav className={styles.nav}>
-                <ul className={styles.lista}>
-                    <li>
-                        <Link className={styles.link} href='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link className={styles.link} href="/sobre">Sobre</Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
-}*/
