@@ -1,23 +1,22 @@
-import './globals.css';
-import Header from '../components/header';
+import "./globals.css";
+import Header from "@/components/Header";
 
 export const metadata = {
-  title: 'Favs',
-  description: 'Olivia',
-  charset: 'UTF-8',
-  author: 'leticia ',
-  keywords: 'HTML, CSS',
+  title: "Músicas",
+  description: "Músicas",
+  charset:'UTF-8',
+  author:'Marianny Gonçalves',
+  keywords:'HTML, CSS, ',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
+        <Header/>
         {children}
       </body>
     </html>
   );
 }
-
 

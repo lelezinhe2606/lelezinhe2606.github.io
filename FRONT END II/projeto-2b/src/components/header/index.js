@@ -17,8 +17,8 @@ const Header = () => {
     <header className={styles.header}>
 
       <div className={styles.logo}>
-        <Image className={styles.img} src="/images/olivia.jpg" alt="Logo" width={50} height={150} />
-        <h2 className={styles.h1}>olivia</h2>
+        <Image className={styles.img} src="/images/olivia123.jpg" alt="Logo"  width={70} height={100}/>
+        <h1 className={styles.h2}>Olivia Rodrigo</h1>
       </div>
 
       {isMenuOpen &&
@@ -33,7 +33,7 @@ const Header = () => {
             </li>
 
             <li>
-              <Link className={styles.link} href="/contato">Contato</Link>
+              <Link className={styles.link} href="/contatos">Contato</Link>
             </li>
           </ul>
         </nav>
@@ -47,4 +47,23 @@ const Header = () => {
 
 export default Header;
 
+
+/*export default function Header(){
+    return(
+        <header>
+            <nav className={styles.nav}>
+                <ul className={styles.lista}>
+                    <li>
+                        <Link className={styles.link} href='/'>Home</Link>
+                    </li>
+                    <li>
+                        <Link className={styles.link} href="/sobre">Sobre</Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    )
+}*/
+
+/*gfvrfvgyhjg5ffvb*/
 
