@@ -1,40 +1,40 @@
-'use client'
-import { useState } from "react"
-export default function State() {
-    const [msg, setMsg] = useState('Boa tarde')
-    const [ mostrarDiv, setMostrarDiv] = useState(true);
+"use client"
+import { useState } from "react";
 
-    //const alterarMsg = ()=>{
-       // setMsg((prevMsg=>{
-      //      prevMsg = 'Bom dia'
-      //      console.log('msg:'+ msg);
-       //     return prevMsg
-     //   }));
+export default function State(){
+    const [msg, setMsg] = useState ('');
+    const [mostrarDiv, setMostrarDiv] = useState(true)
 
+    //const alterarMsg = () => {
+       // setMsg('Bom dia');
+       // console.log('msg: '+msg)
+    //}
 
-     const manipularInput =(evento) => {
-        console.log(evento.target.value)
+    const manipularInput = (evento) =>{
+        console.log(evento.target.value);
         setMsg(evento.target.value)
 
-     }
+    }
 
-     return(
+    return(
         <div>
             {/*<p>{msg}</p>
-            /*<button onClick={alterarMsg}> alterar</button>*/}
-            <p>Sua Mensagem : {msg}</p>
-            <input type="text" onChange={manipularInput} />
-            <button onClick= {()=> setMostrarDiv (!mostrarDiv)}>{mostrarDiv?'Esconder': 'Mostrar'}</button>
-            { mostrarDiv&& (
-                <div>
-                Parágrafo dinâmico
+            <button onClick={alterarMsg}>Alterar</button>*/}
+            <p>Sua mensagem: {msg}</p>
+            <input type="text" onChange={manipularInput}/>
+
+            <button onClick={()=>setMostrarDiv(!mostrarDiv)}>{mostrarDiv?'Esconder':'Mostrar'}</button>
+            {true &&(
+                 <div>
+
+                 <p>Não Fofinha! </p>
+
                 </div>
-            )
-                
-            }
+    
+            )}
+
+        
         </div>
     )
-}
-  
     
-
+}
