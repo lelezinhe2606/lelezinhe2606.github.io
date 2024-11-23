@@ -3,10 +3,10 @@ import Header from "../components/Header";
 
 
 export const metadata = {
-  title: "Músicas",
-  description: "Músicas",
+  title: "cantora",
+  description: "Olivia",
   charset:'UTF-8',
-  author:'Marianny Gonçalves',
+  author:'Leticia Gonçalves',
   keywords:'HTML, CSS, ',
 };
 
