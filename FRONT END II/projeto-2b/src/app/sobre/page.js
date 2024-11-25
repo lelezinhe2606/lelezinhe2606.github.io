@@ -1,7 +1,8 @@
+import styles from './sobre.module.css'
 const Sobre = () => {
     return(
         <main>
-            <h1>Pagina Sobre a maior de todas</h1>
+            <h1 className={styles.h1}>Pagina Sobre</h1>
         </main>
     )
 }

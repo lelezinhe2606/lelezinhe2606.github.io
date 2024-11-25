@@ -1,7 +1,8 @@
+import styles from './contatos.module.css'
 const Sobre = () => {
     return(
         <main>
-            <h1>contato</h1>
+            <h1 className={styles.h1}>Pagina contato</h1>
         </main>
     )
 }
