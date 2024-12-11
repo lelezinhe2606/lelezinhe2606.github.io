@@ -35,6 +35,18 @@ const Header = () => {
             <li>
               <Link className={styles.link} href="/contatos">Contato</Link>
             </li>
+            <li>
+            <Link className={styles.link} href="/lista">lista</Link>
+            </li>
+            <li>
+            <Link className={styles.link} href="/filtro">Filtro</Link>
+            </li>
+            <li>
+            <Link className={styles.link} href="/Card">Card</Link>
+            </li>
+            <li>
+            <Link className={styles.link} href="/props">props</Link>
+            </li>
           </ul>
         </nav>
       }
